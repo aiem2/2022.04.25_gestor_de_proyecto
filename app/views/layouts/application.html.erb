@@ -13,6 +13,7 @@
   </head>
 
   <body>
+  <div class="ml-10">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <%= image_tag "Favicon.png", :width => 40, :height => 40, :crop => :fill, :style => "margin-left:10%", :style => "margin-right:2%"%>
@@ -29,14 +30,10 @@
                 <%= link_to "Registro de Proyecto", "/projects/form", class: "link_navbar"%>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
           </div>
         </div>
       </nav>
-    <div>
       <%= yield %>
     </div>
   </body>
